@@ -224,7 +224,8 @@ class DebugModules(object):
         self.last_measurement = report.value
 
         self.bus.reading_sleep()
-    def orient_to_angle(self, goal_angle, debug=True): 
+    def orient_to_angle(self, goal_angle, steering_ratio=15.7, debug=True): #goal angle is wheel angle
+        goal_angle *= steering_ratio
         angle_tolerance = 2
         standard_torque_positive = 0.2 #temporary! once maya figures some more stuff out we can make this more complex
         standard_torque_negative = -0.2
