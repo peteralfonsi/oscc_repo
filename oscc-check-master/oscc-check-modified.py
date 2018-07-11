@@ -245,10 +245,6 @@ class DebugModules(object):
                 if debug: 
                     writer.writerow({"Torque":torque, "New Angle":angles[-1], "Change in Angle":angles[-1] - angles[-2], "Goal Angle":goal_angle})
 
-                    
-            
-                
-
     def command_steering_module(self, cmd_value, expect=None):
         """
         Command OSCC steering module and verify resulting behavior. Print status, success and
@@ -425,7 +421,7 @@ def main(args):
         STEERING_RATIO = 1/15.7
         file_num = len(os.listdir("tests")) + 7
         fieldnames = ["Torque", "ch_Angle", "Angle", "Wheel Angle", "Run"]
-        with open("torque_test_space2{}.csv".format(file_num), "w") as csvfile:
+        with open("torque_test_space2_{}.csv".format(file_num), "w") as csvfile:
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
             writer.writeheader()
             angles = [modules.bus.check_steering_wheel_angle()]
