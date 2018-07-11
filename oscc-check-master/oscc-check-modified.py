@@ -226,7 +226,7 @@ class DebugModules(object):
         self.bus.reading_sleep()
     def orient_to_angle(self, goal_angle, debug=True): 
         angle_tolerance = 2
-        standard_torque_positive = 0.2
+        standard_torque_positive = 0.2 #temporary! once maya figures some more stuff out we can make this more complex
         standard_torque_negative = -0.2
         angles = [self.bus.check_steering_wheel_angle()]
         with open("tests/orient/orient_to_angle_test_{}".format(len(os.listdir("tests/orient"))), "w" as "csvfile"):
@@ -239,6 +239,7 @@ class DebugModules(object):
                     torque = standard_torque_positive
                 elif angle > goal_angle: 
                     torque = standard_torque_negative
+                self.command_steering_module(torque)
                 angle = self.bus.check_steering_wheel_angle()
                 angles.append(angle)
                 if debug: 
@@ -246,7 +247,7 @@ class DebugModules(object):
 
                     
             
-                self.command_steering_module(torque)
+                
 
     def command_steering_module(self, cmd_value, expect=None):
         """
