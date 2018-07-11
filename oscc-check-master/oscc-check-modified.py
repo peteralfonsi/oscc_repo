@@ -430,7 +430,7 @@ def main(args):
             torque_step = 0.025
             current_torque = 0
             i=0
-            # original code - leaving in case following nested for loops die
+            # semi-original code - leaving in case following nested for loops die
             # for j in range(3):
             #     for n in range(3):
             #         torque_cmd = max_torque
