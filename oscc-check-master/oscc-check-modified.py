@@ -224,7 +224,7 @@ class DebugModules(object):
         self.last_measurement = report.value
 
         self.bus.reading_sleep()
-    def orient_to_angle(self, goal_angle, debug=True): 
+    def orient_to_angle(self, goal_angle, debug=True):
         angle_tolerance = 2
         standard_torque_positive = 0.2
         standard_torque_negative = -0.2
@@ -233,17 +233,17 @@ class DebugModules(object):
             fieldnames = ["Torque", "Ch Angle", "Angle"]
             writer = csv.DictWriter(csvfile, fieldnames)
 
-            while abs(goal_angle - self.bus.check_steering_wheel_angle()) < angle_tolerance: 
+            while abs(goal_angle - self.bus.check_steering_wheel_angle()) < angle_tolerance:
                 angle = self.bus.check_steering_wheel_angle()
-                if angle < goal_angle: 
+                if angle < goal_angle:
                     torque = standard_torque_positive
-                elif angle > goal_angle: 
+                elif angle > goal_angle:
                     torque = standard_torque_negative
-                if debug: 
+                if debug:
                     readouts.append([torque, angle])
 
-                    
-            
+
+
                 self.command_steering_module(torque)
 
     def command_steering_module(self, cmd_value, expect=None):
@@ -430,9 +430,10 @@ def main(args):
             torque_step = 0.025
             current_torque = 0
             i=0
+            # original code - leaving in case following nested for loops die
             # for j in range(3):
             #     for n in range(3):
-            #         torque_cmd = current_torque
+            #         torque_cmd = max_torque
             #         while torque_cmd <= max_torque:
             #             try:
             #                 angles.append(modules.command_steering_module(torque_cmd, expect=None))
@@ -446,7 +447,7 @@ def main(args):
                 for k in range(1):
                     for n in range(3):
                         torque_cmd = current_torque
-                        while torque_cmd <= max_torque:
+                        while -max_torque <= torque_cmd <= max_torque:
                             try:
                                 angles.append(modules.command_steering_module(torque_cmd, expect=None))
                             except:
