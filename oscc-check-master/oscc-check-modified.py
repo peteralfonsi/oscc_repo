@@ -224,6 +224,27 @@ class DebugModules(object):
         self.last_measurement = report.value
 
         self.bus.reading_sleep()
+    def orient_to_angle(self, goal_angle, debug=True): 
+        angle_tolerance = 2
+        standard_torque_positive = 0.2
+        standard_torque_negative = -0.2
+        readouts = []
+        with open("tests/orient/orient_to_angle_test_{}".format(len(os.listdir("tests/orient"))), "w" as "csvfile"):
+            fieldnames = ["Torque", "Ch Angle", "Angle"]
+            writer = csv.DictWriter(csvfile, fieldnames)
+
+            while abs(goal_angle - self.bus.check_steering_wheel_angle()) < angle_tolerance: 
+                angle = self.bus.check_steering_wheel_angle()
+                if angle < goal_angle: 
+                    torque = standard_torque_positive
+                elif angle > goal_angle: 
+                    torque = standard_torque_negative
+                if debug: 
+                    readouts.append([torque, angle])
+
+                    
+            
+                self.command_steering_module(torque)
 
     def command_steering_module(self, cmd_value, expect=None):
         """
@@ -404,7 +425,7 @@ def main(args):
         with open("torque_test_space2{}.csv".format(file_num), "w") as csvfile:
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
             writer.writeheader()
-            angles = [modules.command_steering_module(0, expect=None)]
+            angles = [modules.bus.check_steering_wheel_angle()]
             max_torque = 0.3
             torque_step = 0.025
             i=0
