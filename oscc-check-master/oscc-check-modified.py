@@ -228,19 +228,21 @@ class DebugModules(object):
         angle_tolerance = 2
         standard_torque_positive = 0.2
         standard_torque_negative = -0.2
-        readouts = []
+        angles = [self.bus.check_steering_wheel_angle()]
         with open("tests/orient/orient_to_angle_test_{}".format(len(os.listdir("tests/orient"))), "w" as "csvfile"):
-            fieldnames = ["Torque", "Ch Angle", "Angle"]
+            fieldnames = ["Torque", "Change in Angle", "New Angle", "Goal Angle"]
             writer = csv.DictWriter(csvfile, fieldnames)
 
-            while abs(goal_angle - self.bus.check_steering_wheel_angle()) < angle_tolerance: 
-                angle = self.bus.check_steering_wheel_angle()
+            while abs(goal_angle - angles[-1]) < angle_tolerance: 
+                angle = angles[-1]
                 if angle < goal_angle: 
                     torque = standard_torque_positive
                 elif angle > goal_angle: 
                     torque = standard_torque_negative
+                angle = self.bus.check_steering_wheel_angle()
+                angles.append(angle)
                 if debug: 
-                    readouts.append([torque, angle])
+                    writer.writerow({"Torque":torque, "New Angle":angles[-1], "Change in Angle":angles[-1] - angles[-2], "Goal Angle":goal_angle})
 
                     
             
