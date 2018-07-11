@@ -415,9 +415,10 @@ def main(args):
                         angles.append(modules.command_steering_module(torque_cmd, expect=None))
                     except: 
                         raise Exception("Steering angle function error")
-                    i+=1
+                    
                     writer.writerow({"Torque":torque_cmd, "Angle":angles[i], "ch_Angle":angles[i]-angles[i-1], "Wheel Angle":angles[i]*STEERING_RATIO}, "Run":j)
                     torque_cmd += torque_step
+                    i+=1
         
         
         '''torque_cmd = -0.1
