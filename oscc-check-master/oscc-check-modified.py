@@ -427,36 +427,34 @@ def main(args):
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
             writer.writeheader()
             angles = [modules.bus.check_steering_wheel_angle()]
-            max_torque = 0.3
-            torque_step = 0.025
+            max_torque = 0.25
+            torque_step = 0.05
             current_torque = 0
             i=0
-            # semi-original code - leaving in case following nested for loops die
-            # for j in range(3):
-            #     for n in range(3):
-            #         torque_cmd = max_torque
-            #         while torque_cmd <= max_torque:
-            #             try:
-            #                 angles.append(modules.command_steering_module(torque_cmd, expect=None))
-            #             except:
-            #                 raise Exception("Steering angle function error")
-            #             writer.writerow({"Torque":torque_cmd, "Angle":angles[i], "ch_Angle":angles[i]-angles[i-1], "Wheel Angle":angles[i]*STEERING_RATIO}, "Run":j)
-            #     current_torque += torque_step
-            #     current_torque = -current_torque
-            #     i+=1
-            for j in range(3):
-                for k in range(1):
-                    for n in range(3):
-                        torque_cmd = current_torque
-                        while -max_torque <= torque_cmd <= max_torque:
-                            try:
-                                angles.append(modules.command_steering_module(torque_cmd, expect=None))
-                            except:
-                                raise Exception("Steering angle function error")
-                            writer.writerow({"Torque":torque_cmd, "Angle":angles[i], "ch_Angle":angles[i]-angles[i-1], "Wheel Angle":angles[i]*STEERING_RATIO}, "Run":j)
-                    current_torque = -current_torque
-                current_torque += torque_step
-                i+=1
+            num_steps = max_torque/torque_step
+            while -max_torque <= torque_cmd <= max_torque:
+                for j in range(3):
+                    for k in range(2):
+                        for n in range(3):
+                            if -max_torque <= torque_cmd <= max_torque:
+                                torque_cmd = current_torque
+                                while -max_torque <= torque_cmd <= max_torque:
+                                    try:
+                                        angles.append(modules.command_steering_module(torque_cmd, expect=None))
+                                    except:
+                                        raise Exception("Steering angle function error")
+                                    writer.writerow({"Torque":torque_cmd, "Angle":angles[i], "ch_Angle":angles[i]-angles[i-1], "Wheel Angle":angles[i]*STEERING_RATIO}, "Run":j)
+                            else:
+                                break
+                        if -max_torque <= torque_cmd <= max_torque:
+                            current_torque = -current_torque
+                        else:
+                            break
+                    if -max_torque <= torque_cmd <= max_torque:
+                        current_torque += torque_step
+                        i+=1
+                    else:
+                        break
 
         '''torque_cmd = -0.1
         modules.command_steering_module(torque_cmd, expect=None)
