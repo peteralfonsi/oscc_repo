@@ -422,7 +422,7 @@ def main(args):
         STEERING_RATIO = 1/15.7
         file_num = len(os.listdir("tests")) + 7
         fieldnames = ["Torque", "ch_Angle", "Angle", "Wheel Angle", "Run"]
-        with open("torque_test_space2{}.csv".format(file_num), "w") as csvfile:
+        with open("torque_test_space2_{}.csv".format(file_num), "w") as csvfile:
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
             writer.writeheader()
             angles = [modules.bus.check_steering_wheel_angle()]
