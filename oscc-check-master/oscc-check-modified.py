@@ -271,7 +271,7 @@ class DebugModules(object):
                 Style.RESET_ALL,
                 'steering wheel angle measured at',
                 str(report.value) + '°')
-                
+
         else:
             if report.value is not None and expect is not None:
                 print(
@@ -292,7 +292,7 @@ class DebugModules(object):
 
         self.bus.reading_sleep()
 
-        if report.success is True: 
+        if report.success is True:
             return report.value
 
     def command_throttle_module(self, cmd_value, expect=None):
@@ -401,26 +401,24 @@ def main(args):
         STEERING_RATIO = 1/15.7
         file_num = len(os.listdir("tests")) + 7
         fieldnames = ["Torque", "ch_Angle", "Angle", "Wheel Angle", "Run"]
-        with open("torque_test_space2{}.csv".format(file_num), "w") as csvfile: 
+        with open("torque_test_space2{}.csv".format(file_num), "w") as csvfile:
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
             writer.writeheader()
             angles = [modules.command_steering_module(0, expect=None)]
             max_torque = 0.3
-            torque_step = 0.025 
-            i=1
+            torque_step = 0.025
+            i=0
             for j in range(3):
-                torque_cmd = -max_torque
-                while torque_cmd <= max_torque: 
-                    try:
-                        angles.append(modules.command_steering_module(torque_cmd, expect=None))
-                    except: 
-                        raise Exception("Steering angle function error")
-                    
-                    writer.writerow({"Torque":torque_cmd, "Angle":angles[i], "ch_Angle":angles[i]-angles[i-1], "Wheel Angle":angles[i]*STEERING_RATIO}, "Run":j)
-                    torque_cmd += torque_step
-                    i+=1
-        
-        
+                for k in range(3):
+                    torque_cmd = -max_torque
+                    while torque_cmd <= max_torque:
+                        try:
+                            angles.append(modules.command_steering_module(torque_cmd, expect=None))
+                        except:
+                            raise Exception("Steering angle function error")
+                        writer.writerow({"Torque":torque_cmd, "Angle":angles[i], "ch_Angle":angles[i]-angles[i-1], "Wheel Angle":angles[i]*STEERING_RATIO}, "Run":j)
+                torque_cmd += torque_step
+                i+=1
         '''torque_cmd = -0.1
         modules.command_steering_module(torque_cmd, expect=None)
 
