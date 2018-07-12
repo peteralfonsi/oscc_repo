@@ -429,33 +429,34 @@ def main(args):
             max_torque = 0.25
             torque_step = 0.05
             current_torque = 0
+            prev_torque = 0
+            i = 0
+            q = 0
             torque_cmd = 0
-            i=0
-            num_steps = max_torque/torque_step * 2
-            for j in range(int(num_steps)):
+            num_steps = max_torque/torque_step
+            for n in range(int(num_steps)):
                 for k in range(2):
-                    for n in range(3):
-                        torque_cmd = current_torque
-                        print("torque_cmd = " + str(torque_cmd))
-                        if -max_torque <= torque_cmd <= max_torque:
-                            try:
-                                angles.append(modules.command_steering_module(torque_cmd, expect=None))
-                            except:
-                                raise Exception("Steering angle function error")
-                            writer.writerow({"Torque":torque_cmd, "New Angle":angles[i], "Change in Angle":angles[i]-angles[i-1], "Goal Angle": "n/a"})
-                        else:
-                            break
-                    if -max_torque <= torque_cmd <= max_torque:
+                    for j in range(2):
+                        for i in range(3):
+                            torque_cmd = current_torque
+                            if -max_torque <= torque_cmd <= max_torque:
+                                print("torque_cmd = " + str(torque_cmd) + "; torque change #" + str(i+1))
                         current_torque = -current_torque
-                    else:
-                        break
-                if -max_torque <= torque_cmd <= max_torque:
-                    current_torque += torque_step
-                    i+=1
-                else:
-                    break
+                        print("reversing torque; reverse #" + str(j+1))
+                    if current_torque != 0:
+                        prev_torque = current_torque
+                        current_torque = 0
+                    print("prev_torque = " + str(prev_torque) + "; current_torque = " + str(current_torque) + "; reset #" + str(k+1))
+                current_torque = prev_torque
+                print("current_torque = " + str(current_torque))
+                current_torque += torque_step
+                print("current_torque += " + str(torque_step) + "; current_torque = " + str(current_torque) + "; step up #" + str(n+1))
 
-        '''torque_cmd = -0.1
+
+        '''
+        PolySync's Original Test Code
+
+        torque_cmd = -0.1
         modules.command_steering_module(torque_cmd, expect=None)
 
         torque_cmd = 0.1
@@ -465,7 +466,8 @@ def main(args):
         modules.command_steering_module(torque_cmd, expect='increase')
 
         torque_cmd = -0.15
-        modules.command_steering_module(torque_cmd, expect='decrease')'''
+        modules.command_steering_module(torque_cmd, expect='decrease')
+        '''
         # Visually distinguish enable steps from the following brake validation
         print("|Brake Test --------------------------------------------------------------------|")
 
