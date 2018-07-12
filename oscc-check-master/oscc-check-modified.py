@@ -432,29 +432,28 @@ def main(args):
             torque_cmd = 0
             i=0
             num_steps = max_torque/torque_step * 2
-            while -max_torque <= torque_cmd <= max_torque:
-                for j in range(int(num_steps)):
-                    for k in range(2):
-                        for n in range(3):
-                            torque_cmd = current_torque
-                            print("torque_cmd = " + str(torque_cmd))
-                            if -max_torque <= torque_cmd <= max_torque:
-                                try:
-                                    angles.append(modules.command_steering_module(torque_cmd, expect=None))
-                                except:
-                                    raise Exception("Steering angle function error")
-                                writer.writerow({"Torque":torque_cmd, "New Angle":angles[i], "Change in Angle":angles[i]-angles[i-1], "Goal Angle": "n/a"})
-                            else:
-                                break
+            for j in range(int(num_steps)):
+                for k in range(2):
+                    for n in range(3):
+                        torque_cmd = current_torque
+                        print("torque_cmd = " + str(torque_cmd))
                         if -max_torque <= torque_cmd <= max_torque:
-                            current_torque = -current_torque
+                            try:
+                                angles.append(modules.command_steering_module(torque_cmd, expect=None))
+                            except:
+                                raise Exception("Steering angle function error")
+                            writer.writerow({"Torque":torque_cmd, "New Angle":angles[i], "Change in Angle":angles[i]-angles[i-1], "Goal Angle": "n/a"})
                         else:
                             break
                     if -max_torque <= torque_cmd <= max_torque:
-                        current_torque += torque_step
-                        i+=1
+                        current_torque = -current_torque
                     else:
                         break
+                if -max_torque <= torque_cmd <= max_torque:
+                    current_torque += torque_step
+                    i+=1
+                else:
+                    break
 
         '''torque_cmd = -0.1
         modules.command_steering_module(torque_cmd, expect=None)
