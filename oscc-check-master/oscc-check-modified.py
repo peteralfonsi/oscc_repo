@@ -425,12 +425,13 @@ def main(args):
         with open("torque_test_space2{}.csv".format(file_num), "w") as csvfile:
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
             writer.writeheader()
-            angles = [modules.bus.check_steering_wheel_angle()]
+            angles = [modules.bus.check_steering_wheel_angle().value]
             current = 0
             max_torque = 0.25
             step = 0.05
             previous = 0
             num_steps = max_torque/step + 1
+            i = -1
             for n in range(int(num_steps)):
                 for j in range(3):
                     if j == 0:
@@ -472,6 +473,7 @@ def main(args):
                                 writer.writerow({"Torque":torque_cmd, "New Angle":angles[i], "Change in Angle":angles[i]-angles[i-1], "Goal Angle": "n/a"})
                         else:
                             print("already tested 0")
+
                 if -max_torque < current < max_torque:
                     current += step
 
