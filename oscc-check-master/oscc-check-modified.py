@@ -224,28 +224,27 @@ class DebugModules(object):
         self.last_measurement = report.value
 
         self.bus.reading_sleep()
-    def orient_to_angle(self, goal_angle, steering_ratio=15.7, debug=True): #goal angle is wheel angle
+    def orient_to_angle(self, goal_angle, steering_ratio=1, debug=True): #goal angle is wheel angle
         goal_angle *= steering_ratio
         angle_tolerance = 2
-        standard_torque_positive = 0.2
-        standard_torque_negative = -0.2
-        readouts = []
+        standard_torque_positive = 0.05
+        standard_torque_negative = -0.05
+        angles = [self.bus.check_steering_wheel_angle().value]
         with open("tests/orient/orient_to_angle_test_{}".format(len(os.listdir("tests/orient"))), "w" as "csvfile"):
-            fieldnames = ["Torque", "Ch Angle", "Angle"]
+            fieldnames = ["Torque", "Change in Angle", "New Angle", "Goal Angle"]
             writer = csv.DictWriter(csvfile, fieldnames)
 
-            while abs(goal_angle - self.bus.check_steering_wheel_angle()) < angle_tolerance:
-                angle = self.bus.check_steering_wheel_angle()
+            while abs(goal_angle - self.bus.check_steering_wheel_angle().value) < angle_tolerance:
+                angle = angles[-1]
                 if angle < goal_angle:
                     torque = standard_torque_positive
                 elif angle > goal_angle:
                     torque = standard_torque_negative
-                if debug:
-                    readouts.append([torque, angle])
-
-
-
                 self.command_steering_module(torque)
+                angle = self.bus_check_steering_wheel_angle().value
+                angles.append(angle)
+                if debug:
+                    writer.writerow({"Torque":torque, "New Angle":angles[-1], "Change in Angle":angles[-1]-angles[-2], "Goal Angle":goal_angle})
 
     def command_steering_module(self, cmd_value, expect=None):
         """
@@ -422,7 +421,7 @@ def main(args):
         print("|Steering Test ------------------------------------------------------------------|")
         STEERING_RATIO = 1/15.7
         file_num = len(os.listdir("tests")) + 7
-        fieldnames = ["Torque", "ch_Angle", "Angle", "Wheel Angle", "Run"]
+        fieldnames = ["Torque", "New Angle", "Change in Angle", "Goal Angle"]
         with open("torque_test_space2{}.csv".format(file_num), "w") as csvfile:
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
             writer.writeheader()
@@ -430,20 +429,21 @@ def main(args):
             max_torque = 0.25
             torque_step = 0.05
             current_torque = 0
+            torque_cmd = 0
             i=0
-            num_steps = max_torque/torque_step
+            num_steps = max_torque/torque_step * 2
             while -max_torque <= torque_cmd <= max_torque:
-                for j in range(3):
+                for j in range(int(num_steps):
                     for k in range(2):
                         for n in range(3):
+                            torque_cmd = current_torque
+                            print("torque_cmd = " + str(torque_cmd))
                             if -max_torque <= torque_cmd <= max_torque:
-                                torque_cmd = current_torque
-                                while -max_torque <= torque_cmd <= max_torque:
-                                    try:
-                                        angles.append(modules.command_steering_module(torque_cmd, expect=None))
-                                    except:
-                                        raise Exception("Steering angle function error")
-                                    writer.writerow({"Torque":torque_cmd, "Angle":angles[i], "ch_Angle":angles[i]-angles[i-1], "Wheel Angle":angles[i]*STEERING_RATIO}, "Run":j)
+                                try:
+                                    angles.append(modules.command_steering_module(torque_cmd, expect=None))
+                                except:
+                                    raise Exception("Steering angle function error")
+                                writer.writerow({"Torque":torque_cmd, "New Angle":angles[i], "Change in Angle":angles[i]-angles[i-1], "Goal Angle": "n/a"})
                             else:
                                 break
                         if -max_torque <= torque_cmd <= max_torque:
@@ -466,7 +466,7 @@ def main(args):
         modules.command_steering_module(torque_cmd, expect='increase')
 
         torque_cmd = -0.15
-        modules.command_steering_module(torque_cmd, expect='decrease') #blaz'''
+        modules.command_steering_module(torque_cmd, expect='decrease')'''
         # Visually distinguish enable steps from the following brake validation
         print("|Brake Test --------------------------------------------------------------------|")
 
