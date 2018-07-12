@@ -426,36 +426,61 @@ def main(args):
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
             writer.writeheader()
             angles = [modules.bus.check_steering_wheel_angle()]
+            current = 0
             max_torque = 0.25
-            torque_step = 0.05
-            current_torque = 0
-            torque_cmd = 0
-            i=0
-            num_steps = max_torque/torque_step * 2
-            for j in range(int(num_steps)):
-                for k in range(2):
-                    for n in range(3):
-                        torque_cmd = current_torque
-                        print("torque_cmd = " + str(torque_cmd))
-                        if -max_torque <= torque_cmd <= max_torque:
+            step = 0.05
+            previous = 0
+            num_steps = max_torque/step + 1
+            for n in range(int(num_steps)):
+                for j in range(3):
+                    if j == 0:
+                        print("j = 0")
+                    elif j == 1:
+                        print("j = 1")
+                    elif j == 2:
+                        print("j = 2")
+                    if j == 0:
+                        for k in range(3):
+                            torque_cmd = current
+                            print("torque = " + str(torque_cmd))
                             try:
                                 angles.append(modules.command_steering_module(torque_cmd, expect=None))
                             except:
                                 raise Exception("Steering angle function error")
                             writer.writerow({"Torque":torque_cmd, "New Angle":angles[i], "Change in Angle":angles[i]-angles[i-1], "Goal Angle": "n/a"})
+                    elif j == 1:
+                        if current != 0:
+                            for k in range(3):
+                                torque_cmd = 0
+                                print("torque = " + str(torque_cmd))
+                                try:
+                                    angles.append(modules.command_steering_module(torque_cmd, expect=None))
+                                except:
+                                    raise Exception("Steering angle function error")
+                                writer.writerow({"Torque":torque_cmd, "New Angle":angles[i], "Change in Angle":angles[i]-angles[i-1], "Goal Angle": "n/a"})
                         else:
-                            break
-                    if -max_torque <= torque_cmd <= max_torque:
-                        current_torque = -current_torque
-                    else:
-                        break
-                if -max_torque <= torque_cmd <= max_torque:
-                    current_torque += torque_step
-                    i+=1
-                else:
-                    break
+                            print("already tested 0")
+                    elif j == 2:
+                        if current != 0:
+                            for k in range(3):
+                                torque_cmd = -current
+                                print("torque = " + str(torque_cmd))
+                                try:
+                                    angles.append(modules.command_steering_module(torque_cmd, expect=None))
+                                except:
+                                    raise Exception("Steering angle function error")
+                                writer.writerow({"Torque":torque_cmd, "New Angle":angles[i], "Change in Angle":angles[i]-angles[i-1], "Goal Angle": "n/a"})
+                        else:
+                            print("already tested 0")
+                if -max_torque < current < max_torque:
+                    current += step
 
-        '''torque_cmd = -0.1
+
+
+        '''
+        PolySync's Original Test Code
+
+        torque_cmd = -0.1
         modules.command_steering_module(torque_cmd, expect=None)
 
         torque_cmd = 0.1
@@ -465,7 +490,8 @@ def main(args):
         modules.command_steering_module(torque_cmd, expect='increase')
 
         torque_cmd = -0.15
-        modules.command_steering_module(torque_cmd, expect='decrease')'''
+        modules.command_steering_module(torque_cmd, expect='decrease')
+        '''
         # Visually distinguish enable steps from the following brake validation
         print("|Brake Test --------------------------------------------------------------------|")
 
