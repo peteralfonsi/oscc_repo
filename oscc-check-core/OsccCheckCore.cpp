@@ -6,6 +6,10 @@
 
 using namespace std;
 
+#ifndef NODE_FLAGS_VALUE
+#define NODE_FLAGS_VALUE (0)
+#endif
+
 class OsccCheckPublisherNode : public polysync::Node { 
 
 private: 
