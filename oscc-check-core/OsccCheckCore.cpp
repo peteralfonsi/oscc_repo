@@ -12,7 +12,7 @@ private:
     const string node_name = "oscc-check-publish-cpp"; // i dont know if this is important or not?
     const string steering_command_msg_name = "ps_platform_steering_command_msg";
     const bool debug = True
-    int message_number = 
+    int message_number = 0
 
     ps_msg_type _messageType;
 
