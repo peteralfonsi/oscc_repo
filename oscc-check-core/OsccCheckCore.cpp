@@ -6,9 +6,9 @@
 
 using namespace std;
 
-class OsccCheckPublisherNode : public polysync::Node { 
+class OsccCheckPublisherNode : public polysync::Node {
 
-private: 
+private:
     const string node_name = "oscc-check-publish-cpp"; // i dont know if this is important or not?
     const string steering_command_msg_name = "ps_platform_steering_command_msg";
     const bool debug = True
@@ -16,7 +16,7 @@ private:
 
     ps_msg_type _messageType;
 
-public: 
+public:
     OsccCheckPublisherNode() { //directly copied from Publisher.cpp, unsure if we want to change things
         setNodeType( PSYNC_NODE_TYPE_API_USER );
         setDomainID( PSYNC_DEFAULT_DOMAIN );
@@ -62,7 +62,7 @@ public:
         // do nothing, sleep for 10 milliseconds
         polysync::sleepMicro( 10000 );
     }
-    
+
     void warnStateEvent() override
     {
         // do nothing, sleep for 10 milliseconds
