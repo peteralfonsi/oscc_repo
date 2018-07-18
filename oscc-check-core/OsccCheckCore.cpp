@@ -43,6 +43,7 @@ public:
 
         if (debug) {
             message.print(); //should this be ::?
+            std::cout << "Attempted angle: " << angle << std::endl;
         }
         message.publish();
         polysync::sleepMicro(3000000); //wait 3s so wheel can be adjusted before next message? idk
