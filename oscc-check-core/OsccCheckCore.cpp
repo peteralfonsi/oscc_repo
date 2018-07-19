@@ -74,3 +74,12 @@ public:
     }
 
 };
+
+int main() {
+    OsccCheckPublisherNode oscccheckpublishernode;
+
+    oscccheckpublishernode.connectPolySync();
+
+    return 0;
+    
+}
