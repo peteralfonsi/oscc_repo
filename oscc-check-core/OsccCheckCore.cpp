@@ -10,9 +10,9 @@ using namespace std;
 #define NODE_FLAGS_VALUE (0)
 #endif
 
-class OsccCheckPublisherNode : public polysync::Node { 
+class OsccCheckPublisherNode : public polysync::Node {
 
-private: 
+private:
     const string node_name = "oscc-check-publish-cpp"; // i dont know if this is important or not?
     const string steering_command_msg_name = "ps_platform_steering_command_msg";
     const bool debug = true;
@@ -20,7 +20,7 @@ private:
 
     ps_msg_type _messageType;
 
-public: 
+public:
     OsccCheckPublisherNode() { //directly copied from Publisher.cpp, unsure if we want to change things
         setNodeType( PSYNC_NODE_TYPE_API_USER );
         setDomainID( PSYNC_DEFAULT_DOMAIN );
@@ -39,9 +39,9 @@ public:
             message.setEnabled(1); //enables steering
         }
         message.setSteeringCommandKind(STEERING_COMMAND_ANGLE); //unsure? torque is not an option http://docs.polysync.io/releases/2.1.1/api-docs/c-data-model/control/enumerations/#ps-steering-command-kind
-        int angle = message_number*30 - 90;
+        int angle = message_number*30 - 90; //p sure angle is in radians so. Fun Times w unit conversion
             message.setSteeringWheelAngle(angle);
-        
+
         //message.setSteeringWheelAngle()
 
 
@@ -66,7 +66,7 @@ public:
         // do nothing, sleep for 10 milliseconds
         polysync::sleepMicro( 10000 );
     }
-    
+
     void warnStateEvent() override
     {
         // do nothing, sleep for 10 milliseconds
@@ -74,3 +74,12 @@ public:
     }
 
 };
+
+int main(){
+  OsccCheckPublisherNode oscccheckpublishernode;
+
+  oscccheckpublishernode.connectPolySync();
+
+  return 0;
+  
+}
