@@ -46,7 +46,7 @@ public:
 
 
         if (debug) {
-            message.print(); //should this be ::?
+            message.print();
             std::cout << "Attempted angle: " << angle << std::endl;
         }
         message.publish();
