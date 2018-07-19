@@ -14,7 +14,7 @@ class OsccCheckPublisherNode : public polysync::Node {
 
 private:
     const string node_name = "oscc-check-publish-cpp"; // i dont know if this is important or not?
-    const string steering_command_msg_name = "ps_platform_steering_command_msg";
+    const string steering_command_msg_name = "oscc_steering_command_msg";
     const bool debug = true;
     int message_number = 0;
 
@@ -29,25 +29,33 @@ public:
         setNodeName( node_name );
     }
     void initStateEvent() override {
+        polysync::datamodel::OsccEnableDisableMsg enable_message(*this);
+        enable_message.setHeaderTimestamp(polysync::getTimestamp());
+        std::cout << enable_message.getEnableControl() << std::endl;
+        enable_message.print();
+        enable_message.setEnableControl("1"); //??
+
         _messageType = getMessageTypeByName(steering_command_msg_name);
     }
     void okStateEvent() override {
         polysync::datamodel::PlatformSteeringCommandMessage message(*this); //unsure about message(*this)
         //list of messages: http://docs.polysync.io/releases/2.1.1/api-docs/cpp-data-model/control/platformsteeringcommandmessage/
         message.setHeaderTimestamp(polysync::getTimestamp());
-        if (!message.getEnabled()) {
+        /*(if (!message.getEnabled()) {
             message.setEnabled(1); //enables steering
-        }
+        }*/
         message.setSteeringCommandKind(STEERING_COMMAND_ANGLE); //unsure? torque is not an option http://docs.polysync.io/releases/2.1.1/api-docs/c-data-model/control/enumerations/#ps-steering-command-kind
-        int angle = message_number*30 - 90 * (6.28/360);
-            message.setSteeringWheelAngle(angle);
+        //float angle = message_number*30 - 90 * (6.28/360);
+        float torque = message_number * 0.1 - 0.3;
+            message.setSteeringTorque(angle);
 
         //message.setSteeringWheelAngle()
 
 
         if (debug) {
-            message.print();
-            std::cout << "Attempted angle: " << angle << std::endl;
+            message.print(); //should this be ::?
+            std::cout << "Attempted torque: " << torque << std::endl;
+            std::cout << "Actual torque: " << message.getSteeringTorque() << std::endl;
         }
         message.publish();
         polysync::sleepMicro(3000000); //wait 3s so wheel can be adjusted before next message? idk
