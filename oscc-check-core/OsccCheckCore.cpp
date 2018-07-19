@@ -76,10 +76,10 @@ public:
 };
 
 int main(){
-  OsccCheckPublisherNode oscccheckpublishernode;
+    OsccCheckPublisherNode oscccheckpublishernode;
 
-  oscccheckpublishernode.connectPolySync();
+    oscccheckpublishernode.connectPolySync();
 
-  return 0;
+    return 0;
 
 }
