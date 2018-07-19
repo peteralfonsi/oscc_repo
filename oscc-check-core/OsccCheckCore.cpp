@@ -6,13 +6,17 @@
 
 using namespace std;
 
+#ifndef NODE_FLAGS_VALUE
+#define NODE_FLAGS_VALUE (0)
+#endif
+
 class OsccCheckPublisherNode : public polysync::Node {
 
 private:
     const string node_name = "oscc-check-publish-cpp"; // i dont know if this is important or not?
     const string steering_command_msg_name = "ps_platform_steering_command_msg";
-    const bool debug = True
-    int message_number = 0
+    const bool debug = true;
+    int message_number = 0;
 
     ps_msg_type _messageType;
 
@@ -28,7 +32,7 @@ public:
         _messageType = getMessageTypeByName(steering_command_msg_name);
     }
     void okStateEvent() override {
-        polysync::datamodel::PlatformSteeringCommandMessage message(*this) //unsure about message(*this)
+        polysync::datamodel::PlatformSteeringCommandMessage message(*this); //unsure about message(*this)
         //list of messages: http://docs.polysync.io/releases/2.1.1/api-docs/cpp-data-model/control/platformsteeringcommandmessage/
         message.setHeaderTimestamp(polysync::getTimestamp());
         if (!message.getEnabled()) {
@@ -37,7 +41,7 @@ public:
         message.setSteeringCommandKind(STEERING_COMMAND_ANGLE); //unsure? torque is not an option http://docs.polysync.io/releases/2.1.1/api-docs/c-data-model/control/enumerations/#ps-steering-command-kind
         int angle = message_number*30 - 90;
             message.setSteeringWheelAngle(angle);
-        }
+
         //message.setSteeringWheelAngle()
 
 
@@ -49,7 +53,7 @@ public:
         polysync::sleepMicro(3000000); //wait 3s so wheel can be adjusted before next message? idk
         message_number++;
         if (message_number >= 7) {
-            message_number = 0
+            message_number = 0;
         }
 
     }
@@ -69,4 +73,4 @@ public:
         polysync::sleepMicro( 10000 );
     }
 
-}
+};
