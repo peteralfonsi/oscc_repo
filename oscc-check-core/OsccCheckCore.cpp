@@ -33,21 +33,21 @@ public:
         enable_message.setHeaderTimestamp(polysync::getTimestamp());
         std::cout << enable_message.getEnableControl() << std::endl;
         enable_message.print();
-        enable_message.setEnableControl("1"); //??
+        enable_message.setEnableControl(1); //??
 
         _messageType = getMessageTypeByName(steering_command_msg_name);
     }
     void okStateEvent() override {
-        polysync::datamodel::PlatformSteeringCommandMessage message(*this); //unsure about message(*this)
+        polysync::datamodel::OsccSteeringCommandMsg message(*this); //unsure about message(*this)
         //list of messages: http://docs.polysync.io/releases/2.1.1/api-docs/cpp-data-model/control/platformsteeringcommandmessage/
         message.setHeaderTimestamp(polysync::getTimestamp());
         /*(if (!message.getEnabled()) {
             message.setEnabled(1); //enables steering
         }*/
-        message.setSteeringCommandKind(STEERING_COMMAND_ANGLE); //unsure? torque is not an option http://docs.polysync.io/releases/2.1.1/api-docs/c-data-model/control/enumerations/#ps-steering-command-kind
+        //message.setSteeringCommandKind(STEERING_COMMAND_ANGLE); //unsure? torque is not an option http://docs.polysync.io/releases/2.1.1/api-docs/c-data-model/control/enumerations/#ps-steering-command-kind
         //float angle = message_number*30 - 90 * (6.28/360);
         float torque = message_number * 0.1 - 0.3;
-            message.setSteeringTorque(angle);
+            message.setSteeringTorque(torque);
 
         //message.setSteeringWheelAngle()
 
@@ -79,6 +79,12 @@ public:
     {
         // do nothing, sleep for 10 milliseconds
         polysync::sleepMicro( 10000 );
+    }
+    void releaseStateEvent() override {
+        polysync::datamodel::OsccEnableDisableMsg disable_message;
+        disable_message.setEnableControl(0);
+        std::cout << "Steering control is: " << disable_message.getEnableControl() << std::endl;
+
     }
 
 };
