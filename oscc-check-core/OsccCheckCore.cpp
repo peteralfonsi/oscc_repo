@@ -39,7 +39,7 @@ public:
             message.setEnabled(1); //enables steering
         }
         message.setSteeringCommandKind(STEERING_COMMAND_ANGLE); //unsure? torque is not an option http://docs.polysync.io/releases/2.1.1/api-docs/c-data-model/control/enumerations/#ps-steering-command-kind
-        int angle = message_number*30 - 90; //p sure angle is in radians so. Fun Times w unit conversion
+        int angle = message_number*30 - 90 * (6.28/360);
             message.setSteeringWheelAngle(angle);
 
         //message.setSteeringWheelAngle()
@@ -81,5 +81,5 @@ int main(){
   oscccheckpublishernode.connectPolySync();
 
   return 0;
-  
+
 }
