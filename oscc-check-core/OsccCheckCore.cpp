@@ -81,5 +81,4 @@ int main(){
     oscccheckpublishernode.connectPolySync();
 
     return 0;
-
 }
