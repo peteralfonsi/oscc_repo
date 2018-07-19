@@ -39,11 +39,7 @@ public:
             message.setEnabled(1); //enables steering
         }
         message.setSteeringCommandKind(STEERING_COMMAND_ANGLE); //unsure? torque is not an option http://docs.polysync.io/releases/2.1.1/api-docs/c-data-model/control/enumerations/#ps-steering-command-kind
-<<<<<<< HEAD
         int angle = message_number*30 - 90 * (6.28/360);
-=======
-        int angle = (message_number*30 - 90) * (6.28/360);
->>>>>>> upstream/master
             message.setSteeringWheelAngle(angle);
 
         //message.setSteeringWheelAngle()
@@ -79,20 +75,10 @@ public:
 
 };
 
-<<<<<<< HEAD
 int main(){
-=======
-int main() {
->>>>>>> upstream/master
     OsccCheckPublisherNode oscccheckpublishernode;
 
     oscccheckpublishernode.connectPolySync();
 
     return 0;
-<<<<<<< HEAD
-
 }
-=======
-    
-}
->>>>>>> upstream/master
