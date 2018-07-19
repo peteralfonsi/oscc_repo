@@ -14,8 +14,8 @@ class OsccCheckPublisherNode : public polysync::Node {
 
 private:
     ps_timestamp _updateInterval{50000}; //idk if this is a reasonable amount
-    std::unique_ptr< > _enableDisableCommandGenerator;
-    std::unique_ptr< > _steeringCommandGenerator;
+    std::unique_ptr<EnableDisableMessageGenerator> _enableDisableCommandGenerator;
+    std::unique_ptr<SteeringCommandGenerator> _steeringCommandGenerator;
     
 
 public:
@@ -29,11 +29,11 @@ public:
     void initStateEvent() override {
 
         _steeringCommandGenerator = 
-            std::unique_ptr< >{ //we dont know what goes in the template brackets
+            std::unique_ptr< SteeringCommandGenerator >{ //we dont know what goes in the template brackets
                 new SteeringCommandGenerator(*this);
             }
         _enableDisableCommandGenerator = 
-            std:unique_ptr< >{
+            std:unique_ptr< EnableDisableMessageGenerator>{
                 new EnableDisableMessageGenerator(*this);
             }
 

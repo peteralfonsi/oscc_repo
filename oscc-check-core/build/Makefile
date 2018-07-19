@@ -123,32 +123,86 @@ oscc-core-cpp/fast:
 	$(MAKE) -f CMakeFiles/oscc-core-cpp.dir/build.make CMakeFiles/oscc-core-cpp.dir/build
 .PHONY : oscc-core-cpp/fast
 
-OsccCheckCore.o: OsccCheckCore.cpp.o
+EnableDisableMessageGenerator.o: EnableDisableMessageGenerator.cpp.o
 
-.PHONY : OsccCheckCore.o
+.PHONY : EnableDisableMessageGenerator.o
 
 # target to build an object file
-OsccCheckCore.cpp.o:
-	$(MAKE) -f CMakeFiles/oscc-core-cpp.dir/build.make CMakeFiles/oscc-core-cpp.dir/OsccCheckCore.cpp.o
-.PHONY : OsccCheckCore.cpp.o
+EnableDisableMessageGenerator.cpp.o:
+	$(MAKE) -f CMakeFiles/oscc-core-cpp.dir/build.make CMakeFiles/oscc-core-cpp.dir/EnableDisableMessageGenerator.cpp.o
+.PHONY : EnableDisableMessageGenerator.cpp.o
 
-OsccCheckCore.i: OsccCheckCore.cpp.i
+EnableDisableMessageGenerator.i: EnableDisableMessageGenerator.cpp.i
 
-.PHONY : OsccCheckCore.i
+.PHONY : EnableDisableMessageGenerator.i
 
 # target to preprocess a source file
-OsccCheckCore.cpp.i:
-	$(MAKE) -f CMakeFiles/oscc-core-cpp.dir/build.make CMakeFiles/oscc-core-cpp.dir/OsccCheckCore.cpp.i
-.PHONY : OsccCheckCore.cpp.i
+EnableDisableMessageGenerator.cpp.i:
+	$(MAKE) -f CMakeFiles/oscc-core-cpp.dir/build.make CMakeFiles/oscc-core-cpp.dir/EnableDisableMessageGenerator.cpp.i
+.PHONY : EnableDisableMessageGenerator.cpp.i
 
-OsccCheckCore.s: OsccCheckCore.cpp.s
+EnableDisableMessageGenerator.s: EnableDisableMessageGenerator.cpp.s
 
-.PHONY : OsccCheckCore.s
+.PHONY : EnableDisableMessageGenerator.s
 
 # target to generate assembly for a file
-OsccCheckCore.cpp.s:
-	$(MAKE) -f CMakeFiles/oscc-core-cpp.dir/build.make CMakeFiles/oscc-core-cpp.dir/OsccCheckCore.cpp.s
-.PHONY : OsccCheckCore.cpp.s
+EnableDisableMessageGenerator.cpp.s:
+	$(MAKE) -f CMakeFiles/oscc-core-cpp.dir/build.make CMakeFiles/oscc-core-cpp.dir/EnableDisableMessageGenerator.cpp.s
+.PHONY : EnableDisableMessageGenerator.cpp.s
+
+OsccCheckCoreSubnodes.o: OsccCheckCoreSubnodes.cpp.o
+
+.PHONY : OsccCheckCoreSubnodes.o
+
+# target to build an object file
+OsccCheckCoreSubnodes.cpp.o:
+	$(MAKE) -f CMakeFiles/oscc-core-cpp.dir/build.make CMakeFiles/oscc-core-cpp.dir/OsccCheckCoreSubnodes.cpp.o
+.PHONY : OsccCheckCoreSubnodes.cpp.o
+
+OsccCheckCoreSubnodes.i: OsccCheckCoreSubnodes.cpp.i
+
+.PHONY : OsccCheckCoreSubnodes.i
+
+# target to preprocess a source file
+OsccCheckCoreSubnodes.cpp.i:
+	$(MAKE) -f CMakeFiles/oscc-core-cpp.dir/build.make CMakeFiles/oscc-core-cpp.dir/OsccCheckCoreSubnodes.cpp.i
+.PHONY : OsccCheckCoreSubnodes.cpp.i
+
+OsccCheckCoreSubnodes.s: OsccCheckCoreSubnodes.cpp.s
+
+.PHONY : OsccCheckCoreSubnodes.s
+
+# target to generate assembly for a file
+OsccCheckCoreSubnodes.cpp.s:
+	$(MAKE) -f CMakeFiles/oscc-core-cpp.dir/build.make CMakeFiles/oscc-core-cpp.dir/OsccCheckCoreSubnodes.cpp.s
+.PHONY : OsccCheckCoreSubnodes.cpp.s
+
+SteeringCommandGenerator.o: SteeringCommandGenerator.cpp.o
+
+.PHONY : SteeringCommandGenerator.o
+
+# target to build an object file
+SteeringCommandGenerator.cpp.o:
+	$(MAKE) -f CMakeFiles/oscc-core-cpp.dir/build.make CMakeFiles/oscc-core-cpp.dir/SteeringCommandGenerator.cpp.o
+.PHONY : SteeringCommandGenerator.cpp.o
+
+SteeringCommandGenerator.i: SteeringCommandGenerator.cpp.i
+
+.PHONY : SteeringCommandGenerator.i
+
+# target to preprocess a source file
+SteeringCommandGenerator.cpp.i:
+	$(MAKE) -f CMakeFiles/oscc-core-cpp.dir/build.make CMakeFiles/oscc-core-cpp.dir/SteeringCommandGenerator.cpp.i
+.PHONY : SteeringCommandGenerator.cpp.i
+
+SteeringCommandGenerator.s: SteeringCommandGenerator.cpp.s
+
+.PHONY : SteeringCommandGenerator.s
+
+# target to generate assembly for a file
+SteeringCommandGenerator.cpp.s:
+	$(MAKE) -f CMakeFiles/oscc-core-cpp.dir/build.make CMakeFiles/oscc-core-cpp.dir/SteeringCommandGenerator.cpp.s
+.PHONY : SteeringCommandGenerator.cpp.s
 
 # Help Target
 help:
@@ -159,9 +213,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... oscc-core-cpp"
-	@echo "... OsccCheckCore.o"
-	@echo "... OsccCheckCore.i"
-	@echo "... OsccCheckCore.s"
+	@echo "... EnableDisableMessageGenerator.o"
+	@echo "... EnableDisableMessageGenerator.i"
+	@echo "... EnableDisableMessageGenerator.s"
+	@echo "... OsccCheckCoreSubnodes.o"
+	@echo "... OsccCheckCoreSubnodes.i"
+	@echo "... OsccCheckCoreSubnodes.s"
+	@echo "... SteeringCommandGenerator.o"
+	@echo "... SteeringCommandGenerator.i"
+	@echo "... SteeringCommandGenerator.s"
 .PHONY : help
 
 
