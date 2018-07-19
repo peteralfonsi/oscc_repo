@@ -14,11 +14,12 @@ class OsccCheckPublisherNode : public polysync::Node {
 
 private:
     const string node_name = "oscc-check-publish-cpp"; // i dont know if this is important or not?
+    const string enable_disable_msg_name = "oscc_enable_disable_msg";
     const string steering_command_msg_name = "oscc_steering_command_msg";
     const bool debug = true;
     int message_number = 0;
 
-    ps_msg_type _messageType;
+    //ps_msg_type _messageType;
 
 public:
     OsccCheckPublisherNode() { //directly copied from Publisher.cpp, unsure if we want to change things
@@ -29,13 +30,15 @@ public:
         setNodeName( node_name );
     }
     void initStateEvent() override {
-        polysync::datamodel::OsccEnableDisableMsg enable_message(*this);
+        polysync::datamodel::OsccEnableDisableMsg enable_message( *this);
         enable_message.setHeaderTimestamp(polysync::getTimestamp());
-        std::cout << enable_message.getEnableControl() << std::endl;
+        std::cout << "enable status:" << enable_message.getEnableControl() << std::endl;
         enable_message.print();
         enable_message.setEnableControl(1); //??
+        enable_message.publish();
 
-        _messageType = getMessageTypeByName(steering_command_msg_name);
+        //std::cout << "Message Type:" << getMessageTypeByName(steering_command_msg_name);
+        //_messageType = getMessageTypeByName(steering_command_msg_name);
     }
     void okStateEvent() override {
         polysync::datamodel::OsccSteeringCommandMsg message(*this); //unsure about message(*this)
