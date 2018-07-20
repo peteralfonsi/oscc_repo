@@ -18,8 +18,11 @@ include_directories(
 )
 
 add_executable( ${PROJECT_NAME}
-    OsccCheckCore.cpp
-
+    OsccCheckCoreSubnodes.cpp
+	EnableDisableMessageGenerator.hpp
+	EnableDisableMessageGenerator.cpp
+	SteeringCommandGenerator.hpp
+	SteeringCommandGenerator.cpp
 )
 
 target_link_libraries( ${PROJECT_NAME}

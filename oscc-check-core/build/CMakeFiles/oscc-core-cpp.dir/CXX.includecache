@@ -6,9 +6,33 @@
 
 #IncludeRegexTransform: 
 
-/home/interns/Downloads/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/oscc-check-core/OsccCheckCore.cpp
+/home/interns/Downloads/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/oscc-check-core/EnableDisableMessageGenerator.cpp
+PolySyncNode.hpp
+-
+PolySyncDataModel.hpp
+-
+EnableDisableMessageGenerator.hpp
+/home/interns/Downloads/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/oscc-check-core/EnableDisableMessageGenerator.hpp
+
+/home/interns/Downloads/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/oscc-check-core/EnableDisableMessageGenerator.hpp
+PolySyncNode.hpp
+-
+PolySyncDataModel.hpp
+-
+
+/home/interns/Downloads/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/oscc-check-core/OsccCheckCoreSubnodes.cpp
 iostream
 -
+PolySyncNode.hpp
+-
+PolySyncDataModel.hpp
+-
+
+/home/interns/Downloads/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/oscc-check-core/SteeringCommandGenerator.cpp
+SteeringCommandGenerator.hpp
+/home/interns/Downloads/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/oscc-check-core/SteeringCommandGenerator.hpp
+
+/home/interns/Downloads/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/oscc-check-core/SteeringCommandGenerator.hpp
 PolySyncNode.hpp
 -
 PolySyncDataModel.hpp
