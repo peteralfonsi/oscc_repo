@@ -10,7 +10,7 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is GNU, found in "/home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/oscc-check-core/build/CMakeFiles/3.5.1/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "/home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/osccCoreDriverED/build/CMakeFiles/3.5.1/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: /usr/bin/c++ 
@@ -23,33 +23,33 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is GNU, found in "/home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/oscc-check-core/build/CMakeFiles/3.5.1/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "/home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/osccCoreDriverED/build/CMakeFiles/3.5.1/CompilerIdCXX/a.out"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/oscc-check-core/build/CMakeFiles/CMakeTmp
+Change Dir: /home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/osccCoreDriverED/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_5a2d0/fast"
-/usr/bin/make -f CMakeFiles/cmTC_5a2d0.dir/build.make CMakeFiles/cmTC_5a2d0.dir/build
-make[1]: Entering directory '/home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/oscc-check-core/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_5a2d0.dir/testCCompiler.c.o
-/usr/bin/cc     -o CMakeFiles/cmTC_5a2d0.dir/testCCompiler.c.o   -c /home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/oscc-check-core/build/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_5a2d0
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5a2d0.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_5a2d0.dir/testCCompiler.c.o  -o cmTC_5a2d0 -rdynamic 
-make[1]: Leaving directory '/home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/oscc-check-core/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_af580/fast"
+/usr/bin/make -f CMakeFiles/cmTC_af580.dir/build.make CMakeFiles/cmTC_af580.dir/build
+make[1]: Entering directory '/home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/osccCoreDriverED/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_af580.dir/testCCompiler.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_af580.dir/testCCompiler.c.o   -c /home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/osccCoreDriverED/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_af580
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_af580.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_af580.dir/testCCompiler.c.o  -o cmTC_af580 -rdynamic 
+make[1]: Leaving directory '/home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/osccCoreDriverED/build/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/oscc-check-core/build/CMakeFiles/CMakeTmp
+Change Dir: /home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/osccCoreDriverED/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_de1a8/fast"
-/usr/bin/make -f CMakeFiles/cmTC_de1a8.dir/build.make CMakeFiles/cmTC_de1a8.dir/build
-make[1]: Entering directory '/home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/oscc-check-core/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_de1a8.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc     -o CMakeFiles/cmTC_de1a8.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.5/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_de1a8
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_de1a8.dir/link.txt --verbose=1
-/usr/bin/cc      -v CMakeFiles/cmTC_de1a8.dir/CMakeCCompilerABI.c.o  -o cmTC_de1a8 -rdynamic  
+Run Build Command:"/usr/bin/make" "cmTC_f12df/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f12df.dir/build.make CMakeFiles/cmTC_f12df.dir/build
+make[1]: Entering directory '/home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/osccCoreDriverED/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f12df.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_f12df.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.5/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_f12df
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f12df.dir/link.txt --verbose=1
+/usr/bin/cc      -v CMakeFiles/cmTC_f12df.dir/CMakeCCompilerABI.c.o  -o cmTC_f12df -rdynamic  
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper
@@ -59,23 +59,23 @@ Thread model: posix
 gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.10) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_de1a8' '-rdynamic' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/cc6Z8XQb.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_de1a8 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_de1a8.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
-make[1]: Leaving directory '/home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/oscc-check-core/build/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f12df' '-rdynamic' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccCYT72l.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_f12df /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_f12df.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
+make[1]: Leaving directory '/home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/osccCoreDriverED/build/CMakeFiles/CMakeTmp'
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/oscc-check-core/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/osccCoreDriverED/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_de1a8/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_de1a8.dir/build.make CMakeFiles/cmTC_de1a8.dir/build]
-  ignore line: [make[1]: Entering directory '/home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/oscc-check-core/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_de1a8.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc     -o CMakeFiles/cmTC_de1a8.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.5/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_de1a8]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_de1a8.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc      -v CMakeFiles/cmTC_de1a8.dir/CMakeCCompilerABI.c.o  -o cmTC_de1a8 -rdynamic  ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_f12df/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_f12df.dir/build.make CMakeFiles/cmTC_f12df.dir/build]
+  ignore line: [make[1]: Entering directory '/home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/osccCoreDriverED/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_f12df.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc     -o CMakeFiles/cmTC_f12df.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.5/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_f12df]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f12df.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc      -v CMakeFiles/cmTC_f12df.dir/CMakeCCompilerABI.c.o  -o cmTC_f12df -rdynamic  ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper]
@@ -85,13 +85,13 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.10) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_de1a8' '-rdynamic' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/cc6Z8XQb.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_de1a8 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_de1a8.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f12df' '-rdynamic' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccCYT72l.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_f12df /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_f12df.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/cc6Z8XQb.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccCYT72l.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -109,7 +109,7 @@ Parsed C implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_de1a8] ==> ignore
+    arg [cmTC_f12df] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o] ==> ignore
@@ -121,7 +121,7 @@ Parsed C implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../..]
-    arg [CMakeFiles/cmTC_de1a8.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_f12df.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -153,17 +153,17 @@ Parsed C implicit link information from above output:
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: /home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/oscc-check-core/build/CMakeFiles/CMakeTmp
+Change Dir: /home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/osccCoreDriverED/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_446ef/fast"
-/usr/bin/make -f CMakeFiles/cmTC_446ef.dir/build.make CMakeFiles/cmTC_446ef.dir/build
-make[1]: Entering directory '/home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/oscc-check-core/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_446ef.dir/feature_tests.c.o
-/usr/bin/cc    -std=c11 -o CMakeFiles/cmTC_446ef.dir/feature_tests.c.o   -c /home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/oscc-check-core/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_446ef
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_446ef.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_446ef.dir/feature_tests.c.o  -o cmTC_446ef -rdynamic 
-make[1]: Leaving directory '/home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/oscc-check-core/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_dd955/fast"
+/usr/bin/make -f CMakeFiles/cmTC_dd955.dir/build.make CMakeFiles/cmTC_dd955.dir/build
+make[1]: Entering directory '/home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/osccCoreDriverED/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_dd955.dir/feature_tests.c.o
+/usr/bin/cc    -std=c11 -o CMakeFiles/cmTC_dd955.dir/feature_tests.c.o   -c /home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/osccCoreDriverED/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_dd955
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dd955.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_dd955.dir/feature_tests.c.o  -o cmTC_dd955 -rdynamic 
+make[1]: Leaving directory '/home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/osccCoreDriverED/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -173,17 +173,17 @@ make[1]: Leaving directory '/home/interns/car/polysync-core-cpp-examples-master/
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: /home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/oscc-check-core/build/CMakeFiles/CMakeTmp
+Change Dir: /home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/osccCoreDriverED/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_b6727/fast"
-/usr/bin/make -f CMakeFiles/cmTC_b6727.dir/build.make CMakeFiles/cmTC_b6727.dir/build
-make[1]: Entering directory '/home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/oscc-check-core/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_b6727.dir/feature_tests.c.o
-/usr/bin/cc    -std=c99 -o CMakeFiles/cmTC_b6727.dir/feature_tests.c.o   -c /home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/oscc-check-core/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_b6727
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b6727.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_b6727.dir/feature_tests.c.o  -o cmTC_b6727 -rdynamic 
-make[1]: Leaving directory '/home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/oscc-check-core/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_407b4/fast"
+/usr/bin/make -f CMakeFiles/cmTC_407b4.dir/build.make CMakeFiles/cmTC_407b4.dir/build
+make[1]: Entering directory '/home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/osccCoreDriverED/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_407b4.dir/feature_tests.c.o
+/usr/bin/cc    -std=c99 -o CMakeFiles/cmTC_407b4.dir/feature_tests.c.o   -c /home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/osccCoreDriverED/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_407b4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_407b4.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_407b4.dir/feature_tests.c.o  -o cmTC_407b4 -rdynamic 
+make[1]: Leaving directory '/home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/osccCoreDriverED/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -193,17 +193,17 @@ make[1]: Leaving directory '/home/interns/car/polysync-core-cpp-examples-master/
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: /home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/oscc-check-core/build/CMakeFiles/CMakeTmp
+Change Dir: /home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/osccCoreDriverED/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_c69d4/fast"
-/usr/bin/make -f CMakeFiles/cmTC_c69d4.dir/build.make CMakeFiles/cmTC_c69d4.dir/build
-make[1]: Entering directory '/home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/oscc-check-core/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_c69d4.dir/feature_tests.c.o
-/usr/bin/cc    -std=c90 -o CMakeFiles/cmTC_c69d4.dir/feature_tests.c.o   -c /home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/oscc-check-core/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_c69d4
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c69d4.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_c69d4.dir/feature_tests.c.o  -o cmTC_c69d4 -rdynamic 
-make[1]: Leaving directory '/home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/oscc-check-core/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_68839/fast"
+/usr/bin/make -f CMakeFiles/cmTC_68839.dir/build.make CMakeFiles/cmTC_68839.dir/build
+make[1]: Entering directory '/home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/osccCoreDriverED/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_68839.dir/feature_tests.c.o
+/usr/bin/cc    -std=c90 -o CMakeFiles/cmTC_68839.dir/feature_tests.c.o   -c /home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/osccCoreDriverED/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_68839
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_68839.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_68839.dir/feature_tests.c.o  -o cmTC_68839 -rdynamic 
+make[1]: Leaving directory '/home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/osccCoreDriverED/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -211,30 +211,30 @@ make[1]: Leaving directory '/home/interns/car/polysync-core-cpp-examples-master/
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/oscc-check-core/build/CMakeFiles/CMakeTmp
+Change Dir: /home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/osccCoreDriverED/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_1bda8/fast"
-/usr/bin/make -f CMakeFiles/cmTC_1bda8.dir/build.make CMakeFiles/cmTC_1bda8.dir/build
-make[1]: Entering directory '/home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/oscc-check-core/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_1bda8.dir/testCXXCompiler.cxx.o
-/usr/bin/c++      -o CMakeFiles/cmTC_1bda8.dir/testCXXCompiler.cxx.o -c /home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/oscc-check-core/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_1bda8
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1bda8.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTC_1bda8.dir/testCXXCompiler.cxx.o  -o cmTC_1bda8 -rdynamic 
-make[1]: Leaving directory '/home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/oscc-check-core/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_26bc2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_26bc2.dir/build.make CMakeFiles/cmTC_26bc2.dir/build
+make[1]: Entering directory '/home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/osccCoreDriverED/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_26bc2.dir/testCXXCompiler.cxx.o
+/usr/bin/c++      -o CMakeFiles/cmTC_26bc2.dir/testCXXCompiler.cxx.o -c /home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/osccCoreDriverED/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_26bc2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_26bc2.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_26bc2.dir/testCXXCompiler.cxx.o  -o cmTC_26bc2 -rdynamic 
+make[1]: Leaving directory '/home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/osccCoreDriverED/build/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/oscc-check-core/build/CMakeFiles/CMakeTmp
+Change Dir: /home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/osccCoreDriverED/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_9b086/fast"
-/usr/bin/make -f CMakeFiles/cmTC_9b086.dir/build.make CMakeFiles/cmTC_9b086.dir/build
-make[1]: Entering directory '/home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/oscc-check-core/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_9b086.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++      -o CMakeFiles/cmTC_9b086.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.5/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_9b086
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9b086.dir/link.txt --verbose=1
-/usr/bin/c++       -v CMakeFiles/cmTC_9b086.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_9b086 -rdynamic  
+Run Build Command:"/usr/bin/make" "cmTC_ca433/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ca433.dir/build.make CMakeFiles/cmTC_ca433.dir/build
+make[1]: Entering directory '/home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/osccCoreDriverED/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ca433.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++      -o CMakeFiles/cmTC_ca433.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.5/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_ca433
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ca433.dir/link.txt --verbose=1
+/usr/bin/c++       -v CMakeFiles/cmTC_ca433.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_ca433 -rdynamic  
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper
@@ -244,23 +244,23 @@ Thread model: posix
 gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.10) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9b086' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/cctKjKhN.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_9b086 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_9b086.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
-make[1]: Leaving directory '/home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/oscc-check-core/build/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ca433' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccfEbKTH.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_ca433 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_ca433.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
+make[1]: Leaving directory '/home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/osccCoreDriverED/build/CMakeFiles/CMakeTmp'
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/oscc-check-core/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/osccCoreDriverED/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_9b086/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_9b086.dir/build.make CMakeFiles/cmTC_9b086.dir/build]
-  ignore line: [make[1]: Entering directory '/home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/oscc-check-core/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_9b086.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++      -o CMakeFiles/cmTC_9b086.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.5/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_9b086]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9b086.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++       -v CMakeFiles/cmTC_9b086.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_9b086 -rdynamic  ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_ca433/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_ca433.dir/build.make CMakeFiles/cmTC_ca433.dir/build]
+  ignore line: [make[1]: Entering directory '/home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/osccCoreDriverED/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_ca433.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++      -o CMakeFiles/cmTC_ca433.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.5/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_ca433]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ca433.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++       -v CMakeFiles/cmTC_ca433.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_ca433 -rdynamic  ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper]
@@ -270,13 +270,13 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.10) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9b086' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/cctKjKhN.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_9b086 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_9b086.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ca433' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccfEbKTH.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_ca433 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_ca433.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/cctKjKhN.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccfEbKTH.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -294,7 +294,7 @@ Parsed CXX implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_9b086] ==> ignore
+    arg [cmTC_ca433] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o] ==> ignore
@@ -306,7 +306,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../..]
-    arg [CMakeFiles/cmTC_9b086.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_ca433.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -336,17 +336,17 @@ Parsed CXX implicit link information from above output:
 
 
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
-Change Dir: /home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/oscc-check-core/build/CMakeFiles/CMakeTmp
+Change Dir: /home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/osccCoreDriverED/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_48880/fast"
-/usr/bin/make -f CMakeFiles/cmTC_48880.dir/build.make CMakeFiles/cmTC_48880.dir/build
-make[1]: Entering directory '/home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/oscc-check-core/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_48880.dir/feature_tests.cxx.o
-/usr/bin/c++     -std=c++14 -o CMakeFiles/cmTC_48880.dir/feature_tests.cxx.o -c /home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/oscc-check-core/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_48880
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_48880.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTC_48880.dir/feature_tests.cxx.o  -o cmTC_48880 -rdynamic 
-make[1]: Leaving directory '/home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/oscc-check-core/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_21da1/fast"
+/usr/bin/make -f CMakeFiles/cmTC_21da1.dir/build.make CMakeFiles/cmTC_21da1.dir/build
+make[1]: Entering directory '/home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/osccCoreDriverED/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_21da1.dir/feature_tests.cxx.o
+/usr/bin/c++     -std=c++14 -o CMakeFiles/cmTC_21da1.dir/feature_tests.cxx.o -c /home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/osccCoreDriverED/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_21da1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_21da1.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_21da1.dir/feature_tests.cxx.o  -o cmTC_21da1 -rdynamic 
+make[1]: Leaving directory '/home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/osccCoreDriverED/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -409,17 +409,17 @@ make[1]: Leaving directory '/home/interns/car/polysync-core-cpp-examples-master/
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: /home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/oscc-check-core/build/CMakeFiles/CMakeTmp
+Change Dir: /home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/osccCoreDriverED/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_2ee33/fast"
-/usr/bin/make -f CMakeFiles/cmTC_2ee33.dir/build.make CMakeFiles/cmTC_2ee33.dir/build
-make[1]: Entering directory '/home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/oscc-check-core/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_2ee33.dir/feature_tests.cxx.o
-/usr/bin/c++     -std=c++11 -o CMakeFiles/cmTC_2ee33.dir/feature_tests.cxx.o -c /home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/oscc-check-core/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_2ee33
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2ee33.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTC_2ee33.dir/feature_tests.cxx.o  -o cmTC_2ee33 -rdynamic 
-make[1]: Leaving directory '/home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/oscc-check-core/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_82f47/fast"
+/usr/bin/make -f CMakeFiles/cmTC_82f47.dir/build.make CMakeFiles/cmTC_82f47.dir/build
+make[1]: Entering directory '/home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/osccCoreDriverED/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_82f47.dir/feature_tests.cxx.o
+/usr/bin/c++     -std=c++11 -o CMakeFiles/cmTC_82f47.dir/feature_tests.cxx.o -c /home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/osccCoreDriverED/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_82f47
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_82f47.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_82f47.dir/feature_tests.cxx.o  -o cmTC_82f47 -rdynamic 
+make[1]: Leaving directory '/home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/osccCoreDriverED/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -482,17 +482,17 @@ make[1]: Leaving directory '/home/interns/car/polysync-core-cpp-examples-master/
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: /home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/oscc-check-core/build/CMakeFiles/CMakeTmp
+Change Dir: /home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/osccCoreDriverED/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_493c2/fast"
-/usr/bin/make -f CMakeFiles/cmTC_493c2.dir/build.make CMakeFiles/cmTC_493c2.dir/build
-make[1]: Entering directory '/home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/oscc-check-core/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_493c2.dir/feature_tests.cxx.o
-/usr/bin/c++     -std=c++98 -o CMakeFiles/cmTC_493c2.dir/feature_tests.cxx.o -c /home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/oscc-check-core/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_493c2
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_493c2.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTC_493c2.dir/feature_tests.cxx.o  -o cmTC_493c2 -rdynamic 
-make[1]: Leaving directory '/home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/oscc-check-core/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_e44cd/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e44cd.dir/build.make CMakeFiles/cmTC_e44cd.dir/build
+make[1]: Entering directory '/home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/osccCoreDriverED/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e44cd.dir/feature_tests.cxx.o
+/usr/bin/c++     -std=c++98 -o CMakeFiles/cmTC_e44cd.dir/feature_tests.cxx.o -c /home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/osccCoreDriverED/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_e44cd
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e44cd.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_e44cd.dir/feature_tests.cxx.o  -o cmTC_e44cd -rdynamic 
+make[1]: Leaving directory '/home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/osccCoreDriverED/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers

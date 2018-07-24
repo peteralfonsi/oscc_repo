@@ -1,4 +1,4 @@
-# Install script for directory: /home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/oscc-check-core
+# Install script for directory: /home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/osccCoreDriverED
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/oscc-check-core/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/interns/car/polysync-core-cpp-examples-master/PublishSubscribe/Publish/oscc_repo/osccCoreDriverED/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
