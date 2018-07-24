@@ -2,7 +2,6 @@
 #include <PolySyncNode.hpp>
 #include <PolySyncDataModel.hpp>
 #include <Python.h>
-#include <conio.h>
 
 using namespace std;
 
