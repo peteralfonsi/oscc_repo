@@ -25,12 +25,23 @@ public:
         setNodeName(node_name);
     }
 
-    void initStateEvent() override { //https://www.codeproject.com/Articles/820116/Embedding-Python-program-in-a-C-Cplusplus-code
-        char filename[] = "oscc-check.py";
-        FILE* fp;
+    void initStateEvent() override { //stackoverflow.com/questions/12142174/run-a-python-script-with-arguments
+        FILE* file;
+        int argc;
+        char* argv[];
+
+        argc = 3;
+        argv[0] = "oscc-check.py";
+        argv[1] = "-V"; 
+        argv[2] = "kia_soul_ev";
+        Py_SetProgramName(argv[0]);
         Py_Initialize();
-        fp = _Py_fopen(filename, "r");
-        PyRun_SimpleFile(fp, filename)
+        PySys_SetArgv(argc, argv);
+        file = fopen("oscc-check.py", "r");
+
+        //fp = _Py_fopen(filename, "r");
+        PyRun_SimpleFile(file, "oscc-check.py");
+        Py_Finalize();
 
     }
 
